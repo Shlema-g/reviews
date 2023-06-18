@@ -1,0 +1,736 @@
+
+@font-face {
+    font-family: arona;
+    src: url('assets/fonts/Arona_Bold_font.ttf');
+  }
+
+@font-face {
+    font-family: inter-regular;
+    src: url('assets/fonts/Inter-Regular.ttf');
+  }
+
+@font-face {
+    font-family: inter-bold;
+    src: url('assets/fonts/Inter-Bold.ttf');
+}
+
+._launch__button{
+    height: 55px;
+    width: 55px;
+    border-radius: 6px;
+    background: linear-gradient(136.52deg, #36D4E9 0%, #5865F2 134.31%);
+    font-family: serif;
+    cursor: pointer;
+    position: fixed;
+    top: 210px;
+    right: 20px;
+    text-align: center;
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._launch__button:hover{
+    height: 57px;
+    width: 57px;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+._main__body{
+    height:560px;
+    width:380px;
+    border-radius:20px;
+    box-shadow:0 3px 15px 0 rgba(0,0,0,0.45);
+    background: rgba(66, 70, 81, 1);
+    position:fixed;
+    top: 210px;
+    right:20px;
+    z-index:9999999999;
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+._nav__bar{
+    width: 380px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(19, 24, 37, 1);
+    line-height: 60px;
+}
+
+._nav__bar .nav-content-container{
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+._nav__bar .nav-content-container .wyzer-heading{
+    width: 105px;
+    height: 30px;
+    margin-top: 15px;
+    background-image: url('/assets/images/wyzer-heading.png');
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+._nav__bar .nav-content-container .exit-button{
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+    background-image: url('/assets/images/minimize.png');
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+._auth__screen{
+    height: 500px;
+    width: 380px;
+    padding-top: 50px;
+    background-color: rgba(28, 33, 46, 1);
+}
+
+._login__screen h3{
+    font-family: inter-regular;
+    font-size: 24px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    padding: 0px;
+    text-align: center;
+}
+
+._login__screen .incorrect-info{
+    display: none;
+    font-family: inter-regular;
+    color: red;
+    text-align: center;
+}
+
+._login__screen .input-group{
+    text-align: center;
+}
+
+._login__screen .input-group input[type=email]{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(49, 62, 85, 0.78);
+    color: rgba(255, 255, 255, 1);
+}
+
+._login__screen .input-group input[type=password]{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 0px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(49, 62, 85, 0.78);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+._login__screen .input-group input[type=email]::placeholder{
+    color: white 95%;
+}
+
+._login__screen .forgot-password-button{
+    font-family: inter-regular;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 185px;
+    color: rgba(22, 193, 231, 1);
+}
+
+._login__screen .login-button{
+    width: 215px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(22, 193, 231, 1);
+    color: white;
+    margin-left: 82px;
+    margin-bottom: 10px;
+}
+
+._login__screen .sign-in-button-separator{
+    font-family: inter-regular;
+    color: white;
+    text-align: center;
+}
+
+._login__screen .switch-to-sign-up-container{
+    margin-top: 5px;
+}
+
+._login__screen .no-account{
+    font-family: inter-regular;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    
+}
+
+._login__screen .switch-to-signup-screen-button{
+    font-family: inter-regular;
+    font-size: 12px;
+    color: rgba(22, 193, 231, 1);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+._signup__screen h3{
+    font-family: inter-regular;
+    font-size: 24px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    padding: 0px;
+    text-align: center;
+}
+
+._signup__screen .input-group{
+    text-align: center;
+}
+
+._signup__screen .input-group input[type=email]{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(49, 62, 85, 0.78);
+    color: rgba(255, 255, 255, 1);
+}
+
+._signup__screen .input-group input[type=password]{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 0px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(49, 62, 85, 0.78);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+._signup__screen .input-group input[type=email]::placeholder{
+    color: white 95%;
+}
+
+._signup__screen .forgot-password-button{
+    font-family: inter-regular;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 185px;
+    color: rgba(22, 193, 231, 1);
+}
+
+._signup__screen .signup-button{
+    width: 215px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(22, 193, 231, 1);
+    color: white;
+    margin-left: 82px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+._signup__screen .sign-in-button-separator{
+    font-family: inter-regular;
+    color: white;
+    text-align: center;
+}
+
+._signup__screen .switch-to-login-container{
+    margin-top: 5px;
+}
+
+._signup__screen .has-account{
+    font-family: inter-regular;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    
+}
+
+._signup__screen .switch-to-login-screen-button{
+    font-family: inter-regular;
+    font-size: 12px;
+    color: rgba(22, 193, 231, 1);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+._product__card {
+    width: 360px;
+    height: 75px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    background-color: rgba(38, 42, 54, 1);
+}
+
+._product__card .product-image-loading{
+    height: 51px;
+    width: 51px;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-radius: 10px;
+    background-color: white;
+    display: inline-block;
+    opacity: .1;
+    animation: fading 2s infinite;
+}
+
+
+._product__card .product-image{
+    height: 51px;
+    width: 51px;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-radius: 10px;
+    background-color: black;
+    display: none;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+._product__card .product-info{
+    height: 51px;
+    width: 220px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+._product__card .product-info .prodTitleLoading{
+    display: block;
+    background-color: lightgrey;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100px;
+    height: 20px;
+    max-width: 200px;
+    opacity: .2;
+    animation: fading 2s infinite;
+}
+
+._product__card .product-info .prodTitle{
+    display: none;
+    font-family: inter-regular;
+    font-size: 16px;
+    color: rgba(226, 232, 240, 1);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._product__card .product-info .prodBrandLoading{
+    display: block;
+}
+
+._product__card .product-info .prodBrand{
+    display: none;
+    font-family: inter-regular;
+    font-size: 12px;
+    line-height: 25px;
+    color: rgba(100, 116, 139, 1);
+    margin: 0px;
+    padding: 0px;
+}
+
+._price__card {
+    height: 60px;
+    width: 360px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: auto;
+    background-color: rgba(38, 42, 54, 1);
+}
+
+._price__card .price-info h3{
+    font-family: inter-regular;
+    font-size: 20px;
+    color: rgba(226, 232, 240, 1);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._price__card .price-info p{
+    font-family: inter-regular;
+    font-size: 10px;
+    color: rgba(100, 116, 139, 1);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._price__card .buy-button-loading{
+    display: inline-block
+    height: 40px;
+    width: 155px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(57, 171, 195, 1);
+    opacity: .1;
+    animation: fading 2s infinite;
+}
+
+._price__card .buy-button{
+    display: none;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: rgba(57, 171, 195, 1);
+}
+
+._price__card .buy-button:hover{
+    background-color: rgba(57, 171, 195, .50);
+}
+
+._price__card .buy-button:active{
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-right: 10px;
+    background-color: rgba(57, 171, 195, .70);
+}
+
+._price__card .buy-button .buy-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+._price__card .buy-button .buy-content .cart-image{
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    -webkit-user-select: none;
+}
+
+._price__card .buy-button .buy-content h3{
+    font-family: inter-regular;
+    font-size: 20px;
+    color: rgba(248, 250, 252, 1);
+    margin-top: 8px;
+    margin-right: 12px;
+    padding: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+._ratings__card{
+    width: 360px;
+    height: 320px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow: auto;
+    background-color: rgba(38, 42, 54, 1);
+}
+
+._ratings__card .avgTotalContainer{
+    width: 336px;
+    height: 85;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+._ratings__card .avgTotalContainer .avgRatingLoading{
+    display: inline-block;
+    width: 160px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: .1;
+    animation: fading 2s infinite;
+}
+
+._ratings__card .avgTotalContainer .avgRating{
+    display: none;
+    width: 160px;
+    height: 85px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+._ratings__card .avgTotalContainer .avgRating p{
+    font-family: inter-regular;
+    font-size: 12px;
+    color: rgba(248, 250, 252, 1);
+    margin: 0px;
+    padding-top: 14px;
+}
+
+._ratings__card .avgTotalContainer .avgRating h1{
+    font-family: inter-bold;
+    font-size: 36px;
+    color: rgba(248, 250, 252, 1);
+    margin: 0px;
+    padding: 0px;
+}
+
+._ratings__card .avgTotalContainer .totalReviewsLoading{
+    display: inline-block;
+    width: 160px;
+    height: 85px;
+    margin-left: 16px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: .1;
+    animation: fading 2s infinite;
+}
+
+._ratings__card .avgTotalContainer .totalReviews{
+    display: none;
+    width: 160px;
+    height: 85px;
+    margin-left: 16px;
+    border-radius: 10px;
+    background: #F8FAFC;
+    text-align: center;
+}
+
+._ratings__card .avgTotalContainer .totalReviews p{
+    font-family: inter-regular;
+    font-size: 12px;
+    color: rgba(100, 116, 139, 1);
+    margin: 0px;
+    padding-top: 14px;
+}
+
+._ratings__card .avgTotalContainer .totalReviews h1{
+    font-family: inter-bold;
+    font-size: 36px;
+    color: rgba(30, 41, 59, 1);
+    margin: 0px;
+    padding: 0px;
+}
+
+._ratings__card .individualRatingsContainer{
+    width: 360px;
+    height: 175px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgba(148, 163, 184, 1);
+    border-bottom: 1px solid rgba(148, 163, 184, 1);;
+}
+
+._ratings__card .individualRatingsContainer .firstCompanyRatings{
+    width: 120px;
+    height: 174px;
+    padding-top: 24px;
+    border-right: 1px solid rgba(148, 163, 184, 1);
+    text-align: center;
+}
+
+._ratings__card .individualRatingsContainer .firstCompanyRatings .googleRatingCountLoading{
+    display: block;
+    background-color: lightgrey;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 100px;
+    height: 12px;
+    max-width: 75px;
+    opacity: .2;
+    animation: fading 2s infinite;
+}
+
+._ratings__card .individualRatingsContainer .firstCompanyRatings .googleRatingCount{
+    display: none;
+    font-family: inter-regular;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 8px;
+    color: rgba(226, 232, 240, 1);
+}
+
+._ratings__card .individualRatingsContainer .firstCompanyRatings .showGoogleRating{
+    font-family: inter-regular;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+._ratings__card .individualRatingsContainer .secondCompanyRatings{
+    width: 120px;
+    height: 174px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+._ratings__card .individualRatingsContainer .secondCompanyRatings .walmartRatingCountLoading{
+    display: block;
+    background-color: lightgrey;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 100px;
+    height: 12px;
+    max-width: 75px;
+    opacity: .2;
+    animation: fading 2s infinite;
+}
+
+._ratings__card .individualRatingsContainer .secondCompanyRatings .walmartRatingCount{
+    display: none;
+    font-family: inter-regular;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 8px;
+    color: rgba(226, 232, 240, 1);
+}
+
+._ratings__card .individualRatingsContainer .secondCompanyRatings .showWalmartRating{
+    font-family: inter-regular;
+    margin-top: 0px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+._ratings__card .individualRatingsContainer .thirdCompanyRatings{
+    width: 120px;
+    height: 174px;
+    padding-top: 24px;
+    border-left: 1px solid rgba(148, 163, 184, 1);
+    text-align: center;
+}
+
+._ratings__card .individualRatingsContainer .company-logo{
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+._ratings__card .individualRatingsContainer .amazon-company-logo{
+    width: 75px;
+    height: 20px;
+    padding-top: 20px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+._ratings__card .individualRatingsContainer .thirdCompanyRatings .amazonRatingCountLoading{
+    display: block;
+    background-color: lightgrey;
+    margin-top: 45px;
+    margin-left: 20px;
+    border-radius: 100px;
+    height: 12px;
+    max-width: 75px;
+    opacity: .2;
+    animation: fading 2s infinite;
+}
+
+._ratings__card .individualRatingsContainer .thirdCompanyRatings .amazonRatingCount{
+    display: none;
+    font-family: inter-regular;
+    font-size: 14px;
+    padding-top: 35px;
+    margin-bottom: 8px;
+    color: rgba(226, 232, 240, 1);
+}
+
+._ratings__card .individualRatingsContainer .thirdCompanyRatings .showAmazonRating{
+    font-family: inter-regular;
+    margin-top: 0px;
+    margin-top: -5px;
+    font-size: 10px;
+}
+
+._ratings__card .individualRatingsContainer .star-ratings{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+._ratings__card .logout-button{
+    float: right;
+    background:none;
+    border:none;
+    margin-right: 5px;
+    margin-top: 3px;
+    color: lightgrey;
+    cursor: pointer;
+    font-family: inter-bold;
+    font-size: 10px;
+}
+
+.exit-button{
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+@keyframes fading {
+  0% {
+    opacity: .1;
+  }
+  
+  50% {
+    opacity: .2;
+  }
+  
+  100% {
+    opacity: .1;
+  }
+}
